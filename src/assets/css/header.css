@@ -1,0 +1,138 @@
+.head-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* 
+section one
+*/
+.head-title {
+  display: flex;
+  gap: 30px;
+}
+
+.head-title .insta {
+  height: 205px;
+  width: 150px;
+  background-color: var(--bg-shade-orange);
+  position: relative;
+}
+.head-title .insta img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 160px;
+  width: 100px;
+  mix-blend-mode: multiply;
+}
+
+.head-title .title {
+  align-self: flex-end;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.title :nth-child(1) {
+  font-size: 45px;
+}
+.title :nth-child(2) {
+  font-size: 45px;
+  color: var(--text-color-rose);
+}
+.title :nth-child(3) {
+  font-size: 65px;
+  font-weight: 300;
+}
+.title button {
+  color: var(--white);
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 15px;
+  background-color: var(--text-color-rose);
+  border: none;
+}
+.title button:hover {
+  opacity: 0.5;
+}
+
+/* 
+section two
+*/
+
+.image-sec {
+  min-height: 400px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--bg-shade-orange);
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+
+.image-sec figure:nth-child(2),
+figure:nth-child(3) {
+  height: 120px;
+  z-index: 1;
+  background-color: var(--white);
+}
+.image-sec figure:nth-child(1),
+figure:nth-child(4) {
+  z-index: 2;
+  background-color: var(--bg-shade-orange);
+}
+
+.image-sec figure:nth-child(3) {
+  align-self: end;
+}
+
+.image-sec figure {
+  display: flex;
+}
+
+.image-sec .chair img {
+  height: 200px;
+  width: 130px;
+  mix-blend-mode: multiply;
+  margin: 0 auto;
+}
+
+.image-sec .cycle-right img,
+.cycle-left img {
+  mix-blend-mode: multiply;
+  width: 150px;
+}
+.image-sec .cycle-left img {
+  margin-left: auto;
+}
+
+.image-sec .insta-two img {
+  height: 160px;
+  width: 100px;
+  mix-blend-mode: multiply;
+  align-self: flex-end;
+  margin: 0 auto;
+}
+
+
+@media (max-width:390px){
+  .head-title .title {
+    letter-spacing: .5px;
+  }
+  
+  .title :nth-child(1) {
+    font-size: 40px;
+  }
+  .title :nth-child(2) {
+    font-size: 40px;
+    color: var(--text-color-rose);
+  }
+  .title :nth-child(3) {
+    font-size: 60px;
+    font-weight: 300;
+  }
+}
