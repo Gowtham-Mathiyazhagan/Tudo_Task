@@ -1,0 +1,51 @@
+.scroller-container {
+	margin: 40px 0 40px 0;
+	overflow: hidden;
+  }
+  
+  .scroller-container h3 {
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: "Rajdhani", sans-serif;
+	letter-spacing: 1px;
+	font-size: var(--fs-2);
+  }
+  .scroller {
+	display: flex;
+	align-items: center;
+	width: calc(100px * 18);
+	animation: scroll 20s linear infinite;
+	overflow: hidden;
+	transition: 0.5s linear;
+  }
+  
+  @keyframes scroll {
+	0% {
+	  transform: translateX(0px);
+	  opacity: 0;
+	}
+	5% {
+	  opacity: 10;
+	}
+	100% {
+	  transform: translateX(calc(-100px * 9));
+	}
+  }
+  
+  .scroll {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	width: 100px;
+	margin: 0 5px;
+	border-radius: 5px;
+	perspective: 100px;
+  }
+  
+  .scroll img {
+	width: inherit;
+	mix-blend-mode: multiply;
+	padding: 10px;
+  }
+  
