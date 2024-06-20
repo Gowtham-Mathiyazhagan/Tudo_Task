@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
-import {App} from "./App.css";
+import {App} from "./App.jsx";
 import "../src/app.css";
 import { BrowserRouter } from "react-router-dom";
 
