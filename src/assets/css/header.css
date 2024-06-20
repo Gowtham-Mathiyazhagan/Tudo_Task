@@ -52,6 +52,7 @@ section one
   padding: 8px 18px;
   border-radius: 15px;
   background-color: var(--text-color-rose);
+  cursor: pointer;
   border: none;
 }
 .title button:hover {
@@ -71,8 +72,8 @@ section two
   background-color: var(--bg-shade-orange);
   margin: 0 auto;
   align-items: stretch;
+  transition: all 0.5s linear;
 }
-
 
 .image-sec figure:nth-child(2),
 figure:nth-child(3) {
@@ -105,6 +106,7 @@ figure:nth-child(4) {
 .cycle-left img {
   mix-blend-mode: multiply;
   width: 150px;
+  transition: 0.3s linear;
 }
 .image-sec .cycle-left img {
   margin-left: auto;
@@ -118,12 +120,11 @@ figure:nth-child(4) {
   margin: 0 auto;
 }
 
-
-@media (max-width:390px){
+@media (max-width: 390px) {
   .head-title .title {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
-  
+
   .title :nth-child(1) {
     font-size: 40px;
   }
@@ -135,4 +136,42 @@ figure:nth-child(4) {
     font-size: 60px;
     font-weight: 300;
   }
+}
+
+@media (min-width: 440px) {
+  .image-sec .cycle-right img,
+  .cycle-left img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .image-sec {
+    min-height: 400px;
+    width: 40%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .head-title .title {
+    margin-bottom: 120px;
+  }
+  .head-title .insta {
+    height: 230px;
+    width: 200px;
+  }
+  .head-title .insta img,
+  .image-sec .insta-two img {
+    width: 130px;
+  }
+  .image-sec .chair img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1100px) {
 }

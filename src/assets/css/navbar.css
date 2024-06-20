@@ -1,6 +1,10 @@
 /* 
 Toggle style 
 */
+
+.navbar{
+  position: relative;
+}
 .toggle {
   position: relative;
   height: 35px;
@@ -12,7 +16,7 @@ Toggle style
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 5;
   background-color: var(--white);
 }
 
@@ -51,6 +55,44 @@ Toggle style
   transform: translateX(50px);
 }
 
+/* cart */
+
+.cart {
+  height: 35px;
+  width: 35px;
+  box-shadow: 0 0px 5px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--text-color-rose);
+  stroke: 20px;
+  font-size: var(--fs-1);
+  position: absolute;
+  top: 0;
+  right: 10px;
+  -webkit-text-stroke: .5px;
+}
+.cart .count{
+  position: relative;
+}
+
+.count span{
+  position: absolute;
+  top: -5px;
+  right: 3px;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: var(--text-color-rose);
+  border-radius: 50%;
+  color: #000000;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 600;
+}
+
 /* 
 Nav style
 */
@@ -65,7 +107,7 @@ Nav style
   padding-top: 70px;
   text-align: center;
   transition: 0.5s ease-in-out;
-  z-index: 2;
+  z-index: 4;
 }
 
 .nav-container.active {
@@ -75,7 +117,7 @@ Nav style
 ul.nav-container li {
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
-  height: 50px;
+  /* height: 50px; */
 }
 
 /* for electronics element style */
@@ -83,20 +125,27 @@ ul.nav-container li {
   color: var(--text-color-rose);
 }
 
-.overlay{
-	height: 100vh;
-    width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-	background-color: rgb(0, 0, 0,.1);
-	z-index: 2;
-	transition: var(--transition-1);
+
+@media (min-width: 760px) {
+ .toggle{
+  display: none;
+ }
+ .nav-container{
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: static;
+  padding-top: 0px;
+  background-color: transparent;
+  padding-top:10px ;
+ }
+ .cart{
+  top: 50px;
+ }
+ ul.nav-container li a:hover{
+  color: var(--text-color-rose) !important;
 }
 
-.overlay.active{
-	visibility: visible;
-	opacity: 10;
 }

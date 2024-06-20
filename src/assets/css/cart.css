@@ -1,0 +1,119 @@
+
+.cart-container h1 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 40px;
+}
+
+.cart-container h4 {
+  text-align: center;
+  margin: 20px 0;
+  transition: .5s linear;
+}
+.cart-container .item {
+  display: flex;
+  background-color: #eae8e8;
+  padding: 10px 15px;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.item figure img {
+  height: 80px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+.product-detail h2 {
+  font-size: 16px;
+  width: 250px;
+}
+
+.product-detail .rate {
+  color: var(--cyan-color);
+}
+
+.add-reduce {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-reduce span:not(.total) {
+  padding: 5px 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--cyan-color);
+  cursor: pointer;
+}
+
+.add-reduce .total {
+  font-weight: 500;
+}
+
+.add-reduce span:nth-child(3) {
+  padding: 5px 11.5px;
+}
+
+.cart-container button {
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 18px;
+  border: none;
+  color: var(--white);
+  background-color: var(--cyan-color);
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+
+.product-detail button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--white);
+}
+
+.product-detail button:nth-child(3) {
+  border: 1px solid #ff0000;
+  color: #ff0202;
+}
+
+.product-detail button:nth-child(4) {
+  border: 1px solid var(--cyan-color);
+
+  color: var(--cyan-color);
+  margin-left: 10px;
+}
+.cart-container > button {
+  margin: 20px;
+}
+
+.cart-container button:hover {
+  transform: scale(1.1);
+}
+
+.item .closeBtn {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  font-size: 20px;
+  color: red;
+}
+.Link1{
+	color: var(--cyan-color);
+	}
+ .Link2{
+color: var(--white);
+}
+
+@media (min-width: 660px) {
+  .cart-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+}
