@@ -63,10 +63,10 @@ function cartReducer(initialvalue,action){
   }
   case "plus":{
 
-    return initialvalue.map(val=>val.id===action.id ? {...val,rate:val.rate+120,times:val.times++} : val)
+    return initialvalue.map(val=>val.id===action.id ? {...val,rate:val.rate+120,times:val.times+1} : val)
   }
   case "minus":{
-    return initialvalue.map(val=>val.id===action.id ? {...val,rate:val.rate-120,times:val.times--} : val)
+    return initialvalue.map(val=>val.id===action.id ? {...val,rate:val.rate-120,times:val.times-1} : val)
   }
   case "delete":{
     return initialvalue.filter(val=> val.id !== action.id );
