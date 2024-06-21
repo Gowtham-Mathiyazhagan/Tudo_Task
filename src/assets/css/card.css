@@ -214,10 +214,6 @@ footer {
   .card-component {
     display: flex;
   }
-  .card-container {
-    width: 70%;
-    margin: 0px auto 0 auto;
-  }
   .sidebar {
     max-height: 500px;
     display: flex;
@@ -225,9 +221,11 @@ footer {
     justify-content: space-evenly;
   }
   .card-container {
-    width: 80%;
+    width: 85%;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    margin: 0px auto 0 auto;
+
   }
   
   .padding .wrapper{

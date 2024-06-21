@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 import {App} from "./App.jsx";
-// import "../src/app.css";
 import './App.css'
 import { BrowserRouter } from "react-router-dom";
 
