@@ -8,7 +8,6 @@ import { useCartval, useDispatch } from "../App";
 
 const Card = () => {
   const [viewProduct, setViewProduct] = useState(false);
-  const [added, setAdded] = useState(false);
   const dispatch = useDispatch();
   const cartVal = useCartval();
   function handleCart(data) {
@@ -21,9 +20,7 @@ const Card = () => {
       times: 1,
       added:true,
     });
-    setAdded(true);
-
-    setTimeout(() => setAdded(false), 3000);
+  
   }
 
   return (
